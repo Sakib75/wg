@@ -1,0 +1,321 @@
+Timestamp,Filetype,City,District,KPIType,KPI Name,Result
+23.11.2020 18:50,offers,Essen,Frintrop,KPI 1,Average price,295.0
+23.11.2020 18:50,offers,Essen,Frintrop,KPI 2,Average size,11.0
+23.11.2020 18:50,offers,Essen,Frintrop,KPI 3,Average €/qm,27.083333333333336
+23.11.2020 18:50,offers,Essen,Frintrop,KPI 4,Count furnished,2
+23.11.2020 18:50,offers,Essen,Frintrop,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Huttrop,KPI 1,Average price,383.3333333333333
+23.11.2020 18:50,offers,Essen,Huttrop,KPI 2,Average size,22.5
+23.11.2020 18:50,offers,Essen,Huttrop,KPI 3,Average €/qm,17.653508771929825
+23.11.2020 18:50,offers,Essen,Huttrop,KPI 4,Count furnished,5
+23.11.2020 18:50,offers,Essen,Huttrop,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Essen,Rüttenscheid,KPI 1,Average price,374.5
+23.11.2020 18:50,offers,Essen,Rüttenscheid,KPI 2,Average size,15.666666666666666
+23.11.2020 18:50,offers,Essen,Rüttenscheid,KPI 3,Average €/qm,25.084952890247006
+23.11.2020 18:50,offers,Essen,Rüttenscheid,KPI 4,Count furnished,3
+23.11.2020 18:50,offers,Essen,Rüttenscheid,KPI 5,Count unfurnished,3
+23.11.2020 18:50,offers,Essen,Südviertel,KPI 1,Average price,289.0
+23.11.2020 18:50,offers,Essen,Südviertel,KPI 2,Average size,14.0
+23.11.2020 18:50,offers,Essen,Südviertel,KPI 3,Average €/qm,20.642857142857142
+23.11.2020 18:50,offers,Essen,Südviertel,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Südviertel,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Huttrop - Essener Süden,KPI 1,Average price,250.0
+23.11.2020 18:50,offers,Essen,Huttrop - Essener Süden,KPI 2,Average size,20.0
+23.11.2020 18:50,offers,Essen,Huttrop - Essener Süden,KPI 3,Average €/qm,12.5
+23.11.2020 18:50,offers,Essen,Huttrop - Essener Süden,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Huttrop - Essener Süden,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,uninah/Stadtkern,KPI 1,Average price,300.0
+23.11.2020 18:50,offers,Essen,uninah/Stadtkern,KPI 2,Average size,17.0
+23.11.2020 18:50,offers,Essen,uninah/Stadtkern,KPI 3,Average €/qm,17.647058823529417
+23.11.2020 18:50,offers,Essen,uninah/Stadtkern,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,uninah/Stadtkern,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Nord,KPI 1,Average price,346.875
+23.11.2020 18:50,offers,Essen,Nord,KPI 2,Average size,13.125
+23.11.2020 18:50,offers,Essen,Nord,KPI 3,Average €/qm,28.319429855275445
+23.11.2020 18:50,offers,Essen,Nord,KPI 4,Count furnished,8
+23.11.2020 18:50,offers,Essen,Nord,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Burgaltendorf,KPI 1,Average price,350.0
+23.11.2020 18:50,offers,Essen,Burgaltendorf,KPI 2,Average size,10.0
+23.11.2020 18:50,offers,Essen,Burgaltendorf,KPI 3,Average €/qm,35.0
+23.11.2020 18:50,offers,Essen,Burgaltendorf,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Burgaltendorf,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Ostviertel,KPI 1,Average price,400.0
+23.11.2020 18:50,offers,Essen,Ostviertel,KPI 2,Average size,15.0
+23.11.2020 18:50,offers,Essen,Ostviertel,KPI 3,Average €/qm,26.66666666666667
+23.11.2020 18:50,offers,Essen,Ostviertel,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Ostviertel,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Innenstadt,KPI 1,Average price,366.25
+23.11.2020 18:50,offers,Essen,Innenstadt,KPI 2,Average size,22.5
+23.11.2020 18:50,offers,Essen,Innenstadt,KPI 3,Average €/qm,16.479166666666664
+23.11.2020 18:50,offers,Essen,Innenstadt,KPI 4,Count furnished,4
+23.11.2020 18:50,offers,Essen,Innenstadt,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,ganz nah zur Uni,KPI 1,Average price,320.0
+23.11.2020 18:50,offers,Essen,ganz nah zur Uni,KPI 2,Average size,13.0
+23.11.2020 18:50,offers,Essen,ganz nah zur Uni,KPI 3,Average €/qm,24.615384615384613
+23.11.2020 18:50,offers,Essen,ganz nah zur Uni,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,ganz nah zur Uni,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Süd,KPI 1,Average price,312.3333333333333
+23.11.2020 18:50,offers,Essen,Süd,KPI 2,Average size,18.5
+23.11.2020 18:50,offers,Essen,Süd,KPI 3,Average €/qm,17.1855949505406
+23.11.2020 18:50,offers,Essen,Süd,KPI 4,Count furnished,5
+23.11.2020 18:50,offers,Essen,Süd,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Essen,Altenessen,KPI 1,Average price,377.5
+23.11.2020 18:50,offers,Essen,Altenessen,KPI 2,Average size,14.5
+23.11.2020 18:50,offers,Essen,Altenessen,KPI 3,Average €/qm,27.86616161616162
+23.11.2020 18:50,offers,Essen,Altenessen,KPI 4,Count furnished,2
+23.11.2020 18:50,offers,Essen,Altenessen,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,North Rhine-Westphalia,KPI 1,Average price,190.0
+23.11.2020 18:50,offers,Essen,North Rhine-Westphalia,KPI 2,Average size,20.0
+23.11.2020 18:50,offers,Essen,North Rhine-Westphalia,KPI 3,Average €/qm,9.5
+23.11.2020 18:50,offers,Essen,North Rhine-Westphalia,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,North Rhine-Westphalia,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Kupferdreh,KPI 1,Average price,300.0
+23.11.2020 18:50,offers,Essen,Kupferdreh,KPI 2,Average size,11.5
+23.11.2020 18:50,offers,Essen,Kupferdreh,KPI 3,Average €/qm,26.136363636363637
+23.11.2020 18:50,offers,Essen,Kupferdreh,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Kupferdreh,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Essen,Frillendorf,KPI 1,Average price,295.0
+23.11.2020 18:50,offers,Essen,Frillendorf,KPI 2,Average size,20.0
+23.11.2020 18:50,offers,Essen,Frillendorf,KPI 3,Average €/qm,14.75
+23.11.2020 18:50,offers,Essen,Frillendorf,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Frillendorf,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Stoppenberg,KPI 1,Average price,345.0
+23.11.2020 18:50,offers,Essen,Stoppenberg,KPI 2,Average size,17.5
+23.11.2020 18:50,offers,Essen,Stoppenberg,KPI 3,Average €/qm,20.25
+23.11.2020 18:50,offers,Essen,Stoppenberg,KPI 4,Count furnished,2
+23.11.2020 18:50,offers,Essen,Stoppenberg,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Borbeck,KPI 1,Average price,245.0
+23.11.2020 18:50,offers,Essen,Borbeck,KPI 2,Average size,16.333333333333332
+23.11.2020 18:50,offers,Essen,Borbeck,KPI 3,Average €/qm,15.0625
+23.11.2020 18:50,offers,Essen,Borbeck,KPI 4,Count furnished,2
+23.11.2020 18:50,offers,Essen,Borbeck,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Essen,Holsterhausen,KPI 1,Average price,368.25
+23.11.2020 18:50,offers,Essen,Holsterhausen,KPI 2,Average size,15.0
+23.11.2020 18:50,offers,Essen,Holsterhausen,KPI 3,Average €/qm,25.16835357624831
+23.11.2020 18:50,offers,Essen,Holsterhausen,KPI 4,Count furnished,2
+23.11.2020 18:50,offers,Essen,Holsterhausen,KPI 5,Count unfurnished,2
+23.11.2020 18:50,offers,Essen,City,KPI 1,Average price,310.0
+23.11.2020 18:50,offers,Essen,City,KPI 2,Average size,12.0
+23.11.2020 18:50,offers,Essen,City,KPI 3,Average €/qm,25.83333333333333
+23.11.2020 18:50,offers,Essen,City,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,City,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Altendorf,KPI 1,Average price,280.0
+23.11.2020 18:50,offers,Essen,Altendorf,KPI 2,Average size,19.0
+23.11.2020 18:50,offers,Essen,Altendorf,KPI 3,Average €/qm,21.25
+23.11.2020 18:50,offers,Essen,Altendorf,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Altendorf,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Essen,Kray,KPI 1,Average price,263.3333333333333
+23.11.2020 18:50,offers,Essen,Kray,KPI 2,Average size,12.666666666666666
+23.11.2020 18:50,offers,Essen,Kray,KPI 3,Average €/qm,20.793650793650794
+23.11.2020 18:50,offers,Essen,Kray,KPI 4,Count furnished,3
+23.11.2020 18:50,offers,Essen,Kray,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Frohnhausen,KPI 1,Average price,285.0
+23.11.2020 18:50,offers,Essen,Frohnhausen,KPI 2,Average size,15.666666666666666
+23.11.2020 18:50,offers,Essen,Frohnhausen,KPI 3,Average €/qm,18.715686274509807
+23.11.2020 18:50,offers,Essen,Frohnhausen,KPI 4,Count furnished,0
+23.11.2020 18:50,offers,Essen,Frohnhausen,KPI 5,Count unfurnished,3
+23.11.2020 18:50,offers,Essen,Werden,KPI 1,Average price,300.0
+23.11.2020 18:50,offers,Essen,Werden,KPI 2,Average size,30.0
+23.11.2020 18:50,offers,Essen,Werden,KPI 3,Average €/qm,10.0
+23.11.2020 18:50,offers,Essen,Werden,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Werden,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Altenessen Süd,KPI 1,Average price,365.0
+23.11.2020 18:50,offers,Essen,Altenessen Süd,KPI 2,Average size,18.0
+23.11.2020 18:50,offers,Essen,Altenessen Süd,KPI 3,Average €/qm,20.277777777777782
+23.11.2020 18:50,offers,Essen,Altenessen Süd,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Altenessen Süd,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Essen,Essen,KPI 1,Average price,338.75
+23.11.2020 18:50,offers,Essen,Essen,KPI 2,Average size,17.5
+23.11.2020 18:50,offers,Essen,Essen,KPI 3,Average €/qm,21.224747474747478
+23.11.2020 18:50,offers,Essen,Essen,KPI 4,Count furnished,3
+23.11.2020 18:50,offers,Essen,Essen,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Essen,Süd-Ost,KPI 1,Average price,380.0
+23.11.2020 18:50,offers,Essen,Süd-Ost,KPI 2,Average size,20.0
+23.11.2020 18:50,offers,Essen,Süd-Ost,KPI 3,Average €/qm,19.0
+23.11.2020 18:50,offers,Essen,Süd-Ost,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Essen,Süd-Ost,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Wuppertal,Elberfeld,KPI 1,Average price,292.85714285714283
+23.11.2020 18:50,offers,Wuppertal,Elberfeld,KPI 2,Average size,15.0
+23.11.2020 18:50,offers,Wuppertal,Elberfeld,KPI 3,Average €/qm,20.551159951159953
+23.11.2020 18:50,offers,Wuppertal,Elberfeld,KPI 4,Count furnished,3
+23.11.2020 18:50,offers,Wuppertal,Elberfeld,KPI 5,Count unfurnished,4
+23.11.2020 18:50,offers,Wuppertal,Barmen,KPI 1,Average price,308.25
+23.11.2020 18:50,offers,Wuppertal,Barmen,KPI 2,Average size,15.25
+23.11.2020 18:50,offers,Wuppertal,Barmen,KPI 3,Average €/qm,20.558226495726494
+23.11.2020 18:50,offers,Wuppertal,Barmen,KPI 4,Count furnished,6
+23.11.2020 18:50,offers,Wuppertal,Barmen,KPI 5,Count unfurnished,2
+23.11.2020 18:50,offers,Wuppertal,Wuppertal,KPI 1,Average price,266.0
+23.11.2020 18:50,offers,Wuppertal,Wuppertal,KPI 2,Average size,10.0
+23.11.2020 18:50,offers,Wuppertal,Wuppertal,KPI 3,Average €/qm,26.6
+23.11.2020 18:50,offers,Wuppertal,Wuppertal,KPI 4,Count furnished,0
+23.11.2020 18:50,offers,Wuppertal,Wuppertal,KPI 5,Count unfurnished,1
+23.11.2020 18:50,offers,Wuppertal,Unterbarmen,KPI 1,Average price,245.0
+23.11.2020 18:50,offers,Wuppertal,Unterbarmen,KPI 2,Average size,14.0
+23.11.2020 18:50,offers,Wuppertal,Unterbarmen,KPI 3,Average €/qm,17.5
+23.11.2020 18:50,offers,Wuppertal,Unterbarmen,KPI 4,Count furnished,1
+23.11.2020 18:50,offers,Wuppertal,Unterbarmen,KPI 5,Count unfurnished,0
+23.11.2020 18:50,offers,Wuppertal,Elberfeld West,KPI 1,Average price,350.0
+23.11.2020 18:50,offers,Wuppertal,Elberfeld West,KPI 2,Average size,13.0
+23.11.2020 18:50,offers,Wuppertal,Elberfeld West,KPI 3,Average €/qm,26.923076923076927
+23.11.2020 18:50,offers,Wuppertal,Elberfeld West,KPI 4,Count furnished,0
+23.11.2020 18:50,offers,Wuppertal,Elberfeld West,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Frintrop,KPI 1,Average price,295.0
+23.11.2020 19:0,offers,Essen,Frintrop,KPI 2,Average size,11.0
+23.11.2020 19:0,offers,Essen,Frintrop,KPI 3,Average €/qm,27.083333333333336
+23.11.2020 19:0,offers,Essen,Frintrop,KPI 4,Count furnished,2
+23.11.2020 19:0,offers,Essen,Frintrop,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Huttrop,KPI 1,Average price,383.3333333333333
+23.11.2020 19:0,offers,Essen,Huttrop,KPI 2,Average size,22.5
+23.11.2020 19:0,offers,Essen,Huttrop,KPI 3,Average €/qm,17.653508771929825
+23.11.2020 19:0,offers,Essen,Huttrop,KPI 4,Count furnished,5
+23.11.2020 19:0,offers,Essen,Huttrop,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Rüttenscheid,KPI 1,Average price,374.5
+23.11.2020 19:0,offers,Essen,Rüttenscheid,KPI 2,Average size,15.666666666666666
+23.11.2020 19:0,offers,Essen,Rüttenscheid,KPI 3,Average €/qm,25.084952890247006
+23.11.2020 19:0,offers,Essen,Rüttenscheid,KPI 4,Count furnished,3
+23.11.2020 19:0,offers,Essen,Rüttenscheid,KPI 5,Count unfurnished,3
+23.11.2020 19:0,offers,Essen,Südviertel,KPI 1,Average price,289.0
+23.11.2020 19:0,offers,Essen,Südviertel,KPI 2,Average size,14.0
+23.11.2020 19:0,offers,Essen,Südviertel,KPI 3,Average €/qm,20.642857142857142
+23.11.2020 19:0,offers,Essen,Südviertel,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Südviertel,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Huttrop - Essener Süden,KPI 1,Average price,250.0
+23.11.2020 19:0,offers,Essen,Huttrop - Essener Süden,KPI 2,Average size,20.0
+23.11.2020 19:0,offers,Essen,Huttrop - Essener Süden,KPI 3,Average €/qm,12.5
+23.11.2020 19:0,offers,Essen,Huttrop - Essener Süden,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Huttrop - Essener Süden,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,uninah/Stadtkern,KPI 1,Average price,300.0
+23.11.2020 19:0,offers,Essen,uninah/Stadtkern,KPI 2,Average size,17.0
+23.11.2020 19:0,offers,Essen,uninah/Stadtkern,KPI 3,Average €/qm,17.647058823529417
+23.11.2020 19:0,offers,Essen,uninah/Stadtkern,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,uninah/Stadtkern,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Nord,KPI 1,Average price,346.875
+23.11.2020 19:0,offers,Essen,Nord,KPI 2,Average size,13.125
+23.11.2020 19:0,offers,Essen,Nord,KPI 3,Average €/qm,28.319429855275445
+23.11.2020 19:0,offers,Essen,Nord,KPI 4,Count furnished,8
+23.11.2020 19:0,offers,Essen,Nord,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Burgaltendorf,KPI 1,Average price,350.0
+23.11.2020 19:0,offers,Essen,Burgaltendorf,KPI 2,Average size,10.0
+23.11.2020 19:0,offers,Essen,Burgaltendorf,KPI 3,Average €/qm,35.0
+23.11.2020 19:0,offers,Essen,Burgaltendorf,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Burgaltendorf,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Ostviertel,KPI 1,Average price,400.0
+23.11.2020 19:0,offers,Essen,Ostviertel,KPI 2,Average size,15.0
+23.11.2020 19:0,offers,Essen,Ostviertel,KPI 3,Average €/qm,26.66666666666667
+23.11.2020 19:0,offers,Essen,Ostviertel,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Ostviertel,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Innenstadt,KPI 1,Average price,366.25
+23.11.2020 19:0,offers,Essen,Innenstadt,KPI 2,Average size,22.5
+23.11.2020 19:0,offers,Essen,Innenstadt,KPI 3,Average €/qm,16.479166666666664
+23.11.2020 19:0,offers,Essen,Innenstadt,KPI 4,Count furnished,4
+23.11.2020 19:0,offers,Essen,Innenstadt,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,ganz nah zur Uni,KPI 1,Average price,320.0
+23.11.2020 19:0,offers,Essen,ganz nah zur Uni,KPI 2,Average size,13.0
+23.11.2020 19:0,offers,Essen,ganz nah zur Uni,KPI 3,Average €/qm,24.615384615384613
+23.11.2020 19:0,offers,Essen,ganz nah zur Uni,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,ganz nah zur Uni,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Süd,KPI 1,Average price,312.3333333333333
+23.11.2020 19:0,offers,Essen,Süd,KPI 2,Average size,18.5
+23.11.2020 19:0,offers,Essen,Süd,KPI 3,Average €/qm,17.1855949505406
+23.11.2020 19:0,offers,Essen,Süd,KPI 4,Count furnished,5
+23.11.2020 19:0,offers,Essen,Süd,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Altenessen,KPI 1,Average price,377.5
+23.11.2020 19:0,offers,Essen,Altenessen,KPI 2,Average size,14.5
+23.11.2020 19:0,offers,Essen,Altenessen,KPI 3,Average €/qm,27.86616161616162
+23.11.2020 19:0,offers,Essen,Altenessen,KPI 4,Count furnished,2
+23.11.2020 19:0,offers,Essen,Altenessen,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,North Rhine-Westphalia,KPI 1,Average price,190.0
+23.11.2020 19:0,offers,Essen,North Rhine-Westphalia,KPI 2,Average size,20.0
+23.11.2020 19:0,offers,Essen,North Rhine-Westphalia,KPI 3,Average €/qm,9.5
+23.11.2020 19:0,offers,Essen,North Rhine-Westphalia,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,North Rhine-Westphalia,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Kupferdreh,KPI 1,Average price,300.0
+23.11.2020 19:0,offers,Essen,Kupferdreh,KPI 2,Average size,11.5
+23.11.2020 19:0,offers,Essen,Kupferdreh,KPI 3,Average €/qm,26.136363636363637
+23.11.2020 19:0,offers,Essen,Kupferdreh,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Kupferdreh,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Frillendorf,KPI 1,Average price,295.0
+23.11.2020 19:0,offers,Essen,Frillendorf,KPI 2,Average size,20.0
+23.11.2020 19:0,offers,Essen,Frillendorf,KPI 3,Average €/qm,14.75
+23.11.2020 19:0,offers,Essen,Frillendorf,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Frillendorf,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Stoppenberg,KPI 1,Average price,345.0
+23.11.2020 19:0,offers,Essen,Stoppenberg,KPI 2,Average size,17.5
+23.11.2020 19:0,offers,Essen,Stoppenberg,KPI 3,Average €/qm,20.25
+23.11.2020 19:0,offers,Essen,Stoppenberg,KPI 4,Count furnished,2
+23.11.2020 19:0,offers,Essen,Stoppenberg,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Borbeck,KPI 1,Average price,245.0
+23.11.2020 19:0,offers,Essen,Borbeck,KPI 2,Average size,16.333333333333332
+23.11.2020 19:0,offers,Essen,Borbeck,KPI 3,Average €/qm,15.0625
+23.11.2020 19:0,offers,Essen,Borbeck,KPI 4,Count furnished,2
+23.11.2020 19:0,offers,Essen,Borbeck,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Holsterhausen,KPI 1,Average price,368.25
+23.11.2020 19:0,offers,Essen,Holsterhausen,KPI 2,Average size,15.0
+23.11.2020 19:0,offers,Essen,Holsterhausen,KPI 3,Average €/qm,25.16835357624831
+23.11.2020 19:0,offers,Essen,Holsterhausen,KPI 4,Count furnished,2
+23.11.2020 19:0,offers,Essen,Holsterhausen,KPI 5,Count unfurnished,2
+23.11.2020 19:0,offers,Essen,City,KPI 1,Average price,310.0
+23.11.2020 19:0,offers,Essen,City,KPI 2,Average size,12.0
+23.11.2020 19:0,offers,Essen,City,KPI 3,Average €/qm,25.83333333333333
+23.11.2020 19:0,offers,Essen,City,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,City,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Altendorf,KPI 1,Average price,280.0
+23.11.2020 19:0,offers,Essen,Altendorf,KPI 2,Average size,19.0
+23.11.2020 19:0,offers,Essen,Altendorf,KPI 3,Average €/qm,21.25
+23.11.2020 19:0,offers,Essen,Altendorf,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Altendorf,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Kray,KPI 1,Average price,263.3333333333333
+23.11.2020 19:0,offers,Essen,Kray,KPI 2,Average size,12.666666666666666
+23.11.2020 19:0,offers,Essen,Kray,KPI 3,Average €/qm,20.793650793650794
+23.11.2020 19:0,offers,Essen,Kray,KPI 4,Count furnished,3
+23.11.2020 19:0,offers,Essen,Kray,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Frohnhausen,KPI 1,Average price,285.0
+23.11.2020 19:0,offers,Essen,Frohnhausen,KPI 2,Average size,15.666666666666666
+23.11.2020 19:0,offers,Essen,Frohnhausen,KPI 3,Average €/qm,18.715686274509807
+23.11.2020 19:0,offers,Essen,Frohnhausen,KPI 4,Count furnished,0
+23.11.2020 19:0,offers,Essen,Frohnhausen,KPI 5,Count unfurnished,3
+23.11.2020 19:0,offers,Essen,Werden,KPI 1,Average price,300.0
+23.11.2020 19:0,offers,Essen,Werden,KPI 2,Average size,30.0
+23.11.2020 19:0,offers,Essen,Werden,KPI 3,Average €/qm,10.0
+23.11.2020 19:0,offers,Essen,Werden,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Werden,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Altenessen Süd,KPI 1,Average price,365.0
+23.11.2020 19:0,offers,Essen,Altenessen Süd,KPI 2,Average size,18.0
+23.11.2020 19:0,offers,Essen,Altenessen Süd,KPI 3,Average €/qm,20.277777777777782
+23.11.2020 19:0,offers,Essen,Altenessen Süd,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Altenessen Süd,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Essen,Essen,KPI 1,Average price,338.75
+23.11.2020 19:0,offers,Essen,Essen,KPI 2,Average size,17.5
+23.11.2020 19:0,offers,Essen,Essen,KPI 3,Average €/qm,21.224747474747478
+23.11.2020 19:0,offers,Essen,Essen,KPI 4,Count furnished,3
+23.11.2020 19:0,offers,Essen,Essen,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Essen,Süd-Ost,KPI 1,Average price,380.0
+23.11.2020 19:0,offers,Essen,Süd-Ost,KPI 2,Average size,20.0
+23.11.2020 19:0,offers,Essen,Süd-Ost,KPI 3,Average €/qm,19.0
+23.11.2020 19:0,offers,Essen,Süd-Ost,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Essen,Süd-Ost,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Wuppertal,Elberfeld,KPI 1,Average price,292.85714285714283
+23.11.2020 19:0,offers,Wuppertal,Elberfeld,KPI 2,Average size,15.0
+23.11.2020 19:0,offers,Wuppertal,Elberfeld,KPI 3,Average €/qm,20.551159951159953
+23.11.2020 19:0,offers,Wuppertal,Elberfeld,KPI 4,Count furnished,3
+23.11.2020 19:0,offers,Wuppertal,Elberfeld,KPI 5,Count unfurnished,4
+23.11.2020 19:0,offers,Wuppertal,Barmen,KPI 1,Average price,308.25
+23.11.2020 19:0,offers,Wuppertal,Barmen,KPI 2,Average size,15.25
+23.11.2020 19:0,offers,Wuppertal,Barmen,KPI 3,Average €/qm,20.558226495726494
+23.11.2020 19:0,offers,Wuppertal,Barmen,KPI 4,Count furnished,6
+23.11.2020 19:0,offers,Wuppertal,Barmen,KPI 5,Count unfurnished,2
+23.11.2020 19:0,offers,Wuppertal,Wuppertal,KPI 1,Average price,266.0
+23.11.2020 19:0,offers,Wuppertal,Wuppertal,KPI 2,Average size,10.0
+23.11.2020 19:0,offers,Wuppertal,Wuppertal,KPI 3,Average €/qm,26.6
+23.11.2020 19:0,offers,Wuppertal,Wuppertal,KPI 4,Count furnished,0
+23.11.2020 19:0,offers,Wuppertal,Wuppertal,KPI 5,Count unfurnished,1
+23.11.2020 19:0,offers,Wuppertal,Unterbarmen,KPI 1,Average price,245.0
+23.11.2020 19:0,offers,Wuppertal,Unterbarmen,KPI 2,Average size,14.0
+23.11.2020 19:0,offers,Wuppertal,Unterbarmen,KPI 3,Average €/qm,17.5
+23.11.2020 19:0,offers,Wuppertal,Unterbarmen,KPI 4,Count furnished,1
+23.11.2020 19:0,offers,Wuppertal,Unterbarmen,KPI 5,Count unfurnished,0
+23.11.2020 19:0,offers,Wuppertal,Elberfeld West,KPI 1,Average price,350.0
+23.11.2020 19:0,offers,Wuppertal,Elberfeld West,KPI 2,Average size,13.0
+23.11.2020 19:0,offers,Wuppertal,Elberfeld West,KPI 3,Average €/qm,26.923076923076927
+23.11.2020 19:0,offers,Wuppertal,Elberfeld West,KPI 4,Count furnished,0
+23.11.2020 19:0,offers,Wuppertal,Elberfeld West,KPI 5,Count unfurnished,1
