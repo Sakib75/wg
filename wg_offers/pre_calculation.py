@@ -3,11 +3,14 @@ import pandas
 from set_parameters import start_date_value, end_date_value, scrape_all
 from datetime import datetime
 
-cleansing_postal_codes = True
+cleansing_data = True
 
 now = datetime.now()
 timestamp = f'{now.day}.{now.month}.{now.year} {now.hour}:{now.minute}'
 
+def intersection(lst1, lst2):
+        lst3 = [value for value in lst1 if value in lst2]
+        return lst3
 
 def get_districts(all_district_name):
     districts = []
@@ -56,6 +59,7 @@ except:
 df = pandas.read_csv('Offers.csv')
 
 
+
 if(scrape_all == True):
     date_filter = df
 else:
@@ -65,9 +69,29 @@ else:
 
 
 all_city_name = date_filter.city.unique()
+
 for city in all_city_name:
+    print(f'City : {city}')
     city_data = date_filter.loc[date_filter['city'] == city]
+    
+
+    valid_district_data = pandas.read_csv(
+        r'valid_district_postal\Mapping_Stadtteil_PLZ.csv')
+    valid_district_data_per_city = valid_district_data.loc[valid_district_data['Stadt'] == city]
+    valid_district_list = list(map(str, valid_district_data_per_city['Stadtteil'].tolist()))
+    
     all_district_name = get_districts(city_data.district.unique())
+
+
+    print(f'Number of total district existing in Offers.csv : {len(all_district_name)}')
+
+
+    
+
+    if(cleansing_data == True and len(valid_district_list) > 0):
+        all_district_name = set(intersection(valid_district_list, all_district_name))
+    
+    print(f'Number of total district existing in Offers.csv (After cleansing) : {len(all_district_name)}')
 
     for district in all_district_name:
 
@@ -113,20 +137,18 @@ for city in all_city_name:
 
     # Read postal data
     postal_data = pandas.read_csv(
-        r'postal_codes\Mapping_Stadtteil_PLZ_Essen.csv')
+        r'valid_district_postal\Mapping_Stadtteil_PLZ.csv')
     postal_data_per_city = postal_data.loc[postal_data['Stadt'] == city]
     postal_code_list = list(map(str, postal_data_per_city['PLZ'].tolist()))
     all_post = list(map(str, city_data.postal_code.unique().tolist()))
 
 
-    def intersection(lst1, lst2):
-        lst3 = [value for value in lst1 if value in lst2]
-        return lst3
+    print(f'Number of total postal codes existing in Offers.csv : {len(all_post)}')
 
-    if(cleansing_postal_codes == True and len(postal_code_list) > 0):
-        all_post = intersection(postal_code_list, all_post)
+    if(cleansing_data == True and len(postal_code_list) > 0):
+        all_post = set(intersection(postal_code_list, all_post))
 
-
+    print(f'Number of total postal codes existing in Offers.csv (After cleansing) : {len(all_post)}')
 
     for post in all_post:
         # print(post)
@@ -175,3 +197,5 @@ for city in all_city_name:
                                  'KPI 4', 'Count furnished', number_of_fur_yes])
             csv_writer.writerow([timestamp, 'offers', city, postal_code,
                                  'KPI 5', 'Count unfurnished', number_of_fur_no])
+
+    print('******')

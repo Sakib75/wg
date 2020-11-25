@@ -4,8 +4,12 @@ from set_parameters import start_date_value,end_date_value,scrape_all
 from datetime import datetime
 
 
+cleansing_data = True
 
-
+def intersection(lst1, lst2):
+        lst3 = [value for value in lst1 if value in lst2]
+        return lst3
+        
 def get_districts(all_district_name):
   districts = []
   for d in all_district_name:
@@ -51,13 +55,31 @@ else:
 all_city_name = date_filter.city.unique()
 
 for city in all_city_name:
+  print(f'City : {city}')
   city_data = date_filter.loc[date_filter['city'] == city]
+    
+
+  valid_district_data = pandas.read_csv(r'valid_district_postal\Mapping_Stadtteil_PLZ.csv')
+  valid_district_data_per_city = valid_district_data.loc[valid_district_data['Stadt'] == city]
+  valid_district_list = list(map(str, valid_district_data_per_city['Stadtteil'].tolist()))
+
   all_district_name = get_districts(city_data.district.unique())
 
+  print(f'Number of total district existing in Offers.csv : {len(all_district_name)}')
+
+
+    
+
+  if(cleansing_data == True and len(valid_district_list) > 0):
+    all_district_name = set(intersection(valid_district_list, all_district_name))
+
+  print(f'Number of total district existing in Offers.csv (After cleansing) : {len(all_district_name)}')
+
+
   for district in all_district_name:
-    print(f'{city} : {district}' )
+
     district_data = city_data.loc[city_data['district'].str.lower().str.contains(district.lower().replace('?',''))]
-    print(district_data[['city','district','price','size','facilities']])
+
     prices = district_data['price'].str.replace('€','').apply(pandas.to_numeric, args=('coerce',))
 
     average_price = prices.mean(axis= 0)
@@ -75,16 +97,6 @@ for city in all_city_name:
     number_of_fur_yes = len(district_data[district_data['facilities'].str.contains('Furnished')])
     number_of_fur_no = len(district_data) - number_of_fur_yes
     
-    print('*************')
-    print(city)
-    print(district)
-    print(start_date_value)
-    print(end_date_value)
-    print(f'Average price: {average_price}')
-    print(f'Average size: {average_size}')
-    print(f'Average price/qm: {average_price_per_qm}')
-    print(f'No of fur:Yes: {number_of_fur_yes}')
-    print(f'No of fur: No: {number_of_fur_no}')
 
 
 

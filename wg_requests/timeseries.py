@@ -18,6 +18,7 @@ def get_month(timestamps):
 		date_string = f"{month} {year}"
 
 		months.append(date_string)
+       
 	return months
 
 
@@ -44,7 +45,11 @@ with PdfPages('Report_for_Offers(district_based).pdf') as pdf:
             unfurnished = district_data.loc[district_data['KPI Name'] == 'Count unfurnished'].Result.tolist()
 
             count = [x + y for x, y in zip(furnished, unfurnished)]
+
             index = get_month(timestamps)
+
+            index.sort(key=lambda date: datetime.datetime.strptime(date, "%b %Y"))
+
             for kpi in KPI_names:
                 fig, axs = pyplot.subplots()
                 data = {

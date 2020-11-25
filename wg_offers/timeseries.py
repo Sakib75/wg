@@ -36,7 +36,7 @@ with PdfPages('Report_for_Offers(postal_code_based).pdf') as pdf:
         cd = 1
         for postal in postals:
 
-            print(f'City {cc} out of {len(cities)} cities | Postal Code {cd} out of {len(postals)}')
+            print(f'City {cc} out of {len(cities)} | Postal Code {cd} out of {len(postals)}')
             
             postal_data = series.loc[series['Postal_Code']==postal]
             timestamps = postal_data['Timestamp'].unique()
@@ -46,6 +46,7 @@ with PdfPages('Report_for_Offers(postal_code_based).pdf') as pdf:
 
             count = [x + y for x, y in zip(furnished, unfurnished)]
             index = get_month(timestamps)
+            index.sort(key=lambda date: datetime.datetime.strptime(date, "%b %Y"))
             for kpi in KPI_names:
                 fig, axs = pyplot.subplots()
                 data = {
@@ -112,6 +113,7 @@ with PdfPages('Report_for_Offers(district_based).pdf') as pdf:
 
             count = [x + y for x, y in zip(furnished, unfurnished)]
             index = get_month(timestamps)
+            index.sort(key=lambda date: datetime.datetime.strptime(date, "%b %Y"))
             for kpi in KPI_names:
                 fig, axs = pyplot.subplots()
                 data = {
