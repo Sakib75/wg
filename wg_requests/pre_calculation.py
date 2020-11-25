@@ -18,13 +18,13 @@ now = datetime.now()
 timestamp = f'{now.day}.{now.month}.{now.year} {now.hour}:{now.minute}'
 
 def write_header():
-    out_file = open('pre_calculation.csv','w')
+    out_file = open('pre_calculation(district).csv','w')
     head = "Timestamp,Filetype,City,District,KPIType,KPI Name,Result" + "\n"
     out_file.write(head)
     out_file.close()
 
 try:
-  with open('pre_calculation.csv','r') as f:
+  with open('pre_calculation(district).csv','r') as f:
     reader = csv.reader(f)
     try:
       row1 = next(reader)
@@ -88,7 +88,7 @@ for city in all_city_name:
 
 
 
-    with open('pre_calculation.csv', mode='a',encoding='utf-8',newline='') as csv_file:
+    with open('pre_calculation(district).csv', mode='a',encoding='utf-8',newline='') as csv_file:
       csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
       csv_writer.writerow([timestamp,'requests',city, district, 'KPI 1','Average price',average_price])

@@ -5,7 +5,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 import datetime
 
 # Specify KPI Type
-foreground_indicator = 5
+
 KPI_names = ['Average price','Average size','Average €/qm','Count furnished','Count unfurnished']
 def get_month(timestamps):
 	months = []
@@ -21,26 +21,34 @@ def get_month(timestamps):
 	return months
 
 
+series = read_csv('pre_calculation(district).csv')
 
-series = read_csv('pre_calculation.csv')
+with PdfPages('Report_for_Offers(district_based).pdf') as pdf:
 
-with PdfPages('Report_Requests(district_based).pdf') as pdf:
     cities = series.City.unique()
+    
+    cc = 1
     for city in cities:
-        districts = series.District.unique()
+        
+        city_data = series.loc[series['City'] == city]
+        districts = city_data.District.unique()
+        cd = 1
         for district in districts:
-            postal_data = series.loc[series['District']==district]
-            timestamps = postal_data['Timestamp'].unique()
 
-            furnished = postal_data.loc[postal_data['KPI Name'] == 'Count furnished'].Result.tolist()
-            unfurnished = postal_data.loc[postal_data['KPI Name'] == 'Count unfurnished'].Result.tolist()
+            print(f'City {cc} out of {len(cities)}  | District {cd} out of {len(districts)}')
+            
+            district_data = series.loc[series['District']==district]
+            timestamps = district_data['Timestamp'].unique()
+
+            furnished = district_data.loc[district_data['KPI Name'] == 'Count furnished'].Result.tolist()
+            unfurnished = district_data.loc[district_data['KPI Name'] == 'Count unfurnished'].Result.tolist()
 
             count = [x + y for x, y in zip(furnished, unfurnished)]
             index = get_month(timestamps)
             for kpi in KPI_names:
                 fig, axs = pyplot.subplots()
                 data = {
-                    kpi: postal_data.loc[postal_data['KPI Name'] == kpi].Result.tolist(),
+                    kpi: district_data.loc[district_data['KPI Name'] == kpi].Result.tolist(),
                 }
 
 
@@ -74,3 +82,5 @@ with PdfPages('Report_Requests(district_based).pdf') as pdf:
                 fig.tight_layout()
                 pdf.savefig()
                 pyplot.close()
+            cd = cd + 1
+        cc = cc + 1
