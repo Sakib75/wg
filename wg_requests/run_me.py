@@ -59,12 +59,12 @@ for row in reader:
     # Parsing the inputs 
 
     # Convert start and end date to timestamp 
-    if(start_date_value != 'any' and end_date_value != 'any'):
+    try:
         start_date = list(map(int,start_date_value.split('.')))
         start_date = int(datetime.datetime(start_date[2],start_date[1],start_date[0]).timestamp())
         end_date = list(map(int,end_date_value.split('.')))
         end_date = int(datetime.datetime(end_date[2],end_date[1],end_date[0]).timestamp())
-    else:
+    except:
         start_date = ''
         end_date = ''
 

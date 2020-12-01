@@ -60,7 +60,7 @@ df = pandas.read_csv('Offers.csv')
 
 
 
-if(scrape_all == True):
+if(True):
     date_filter = df
 else:
     date_filter_primary = df.loc[df['start_date'] == start_date_value]
@@ -78,6 +78,7 @@ for city in all_city_name:
     valid_district_data = pandas.read_csv(
         r'valid_district_postal\Mapping_Stadtteil_PLZ.csv')
     valid_district_data_per_city = valid_district_data.loc[valid_district_data['Stadt'] == city]
+    
     valid_district_list = list(map(str, valid_district_data_per_city['Stadtteil'].tolist()))
     
     all_district_name = get_districts(city_data.district.unique())
@@ -98,6 +99,9 @@ for city in all_city_name:
         district_data = city_data.loc[city_data['district'].str.lower(
         ).str.contains(district.lower())]
 
+
+
+
         prices = district_data['price'].str.replace(
             '€', '').apply(pandas.to_numeric, args=('coerce',))
 
@@ -113,6 +117,30 @@ for city in all_city_name:
 
         average_price_per_qm = prices_per_qm.mean(axis=0)
 
+        miscellaneous_costs = district_data['miscellaneous_cost'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_miscellaneous_cost = miscellaneous_costs.mean(axis=0)
+
+
+                    
+
+
+        utilities_costs = district_data['utilities_cost'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_utilities_cost = utilities_costs.mean(axis=0)
+
+
+        rents = district_data['rent'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_rent = rents.mean(axis=0)
+
+
+        base_rent = district_data['base_rent'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_base_rent = base_rent.mean(axis=0)        
+
+        
+
         number_of_fur_yes = len(
             district_data[district_data['furnished'].str.contains('Yes')])
         number_of_fur_no = len(district_data) - number_of_fur_yes
@@ -125,13 +153,21 @@ for city in all_city_name:
             csv_writer.writerow(
                 [timestamp, 'offers', city, district, 'KPI 1', 'Average price', average_price])
             csv_writer.writerow(
-                [timestamp, 'offers', city, district, 'KPI 2', 'Average size', average_size])
+                [timestamp, 'offers', city, district, 'KPI 2', 'Average Miscellaneous Cost', average_miscellaneous_cost])
             csv_writer.writerow(
-                [timestamp, 'offers', city, district, 'KPI 3', 'Average €/qm', average_price_per_qm])
+                [timestamp, 'offers', city, district, 'KPI 3', 'Average Utilities Cost', average_utilities_cost])
             csv_writer.writerow(
-                [timestamp, 'offers', city, district, 'KPI 4', 'Count furnished', number_of_fur_yes])
+                [timestamp, 'offers', city, district, 'KPI 4', 'Average Rent', average_rent])
+            # csv_writer.writerow(
+            #     [timestamp, 'offers', city, district, 'KPI 5', 'Average Base Rent', average_base_rent])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, district, 'KPI 5', 'Average size', average_size])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, district, 'KPI 6', 'Average €/qm', average_price_per_qm])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, district, 'KPI 7', 'Count furnished', number_of_fur_yes])
             csv_writer.writerow([timestamp, 'offers', city, district,
-                                 'KPI 5', 'Count unfurnished', number_of_fur_no])
+                                 'KPI 8', 'Count unfurnished', number_of_fur_no])
 
     # Postal Code
 
@@ -151,14 +187,18 @@ for city in all_city_name:
     print(f'Number of total postal codes existing in Offers.csv (After cleansing) : {len(all_post)}')
 
     for post in all_post:
-        # print(post)
-        data = date_filter.loc[date_filter['postal_code'] == post]
-        # print(data)
+
+    
+        data = city_data.loc[city_data['postal_code'] == post]
+        if(data.empty):
+            data = city_data.loc[city_data['postal_code'] == int(post)]
+
+
         prices = data['price'].str.replace('€', '').apply(
             pandas.to_numeric, args=('coerce',))
 
         average_price = prices.mean(axis=0)
-
+        
         sizes = data['size'].str.replace(' m²', '').apply(
             pandas.to_numeric, args=('coerce',))
 
@@ -168,20 +208,35 @@ for city in all_city_name:
         average_price_per_qm = prices_per_qm.mean(axis=0)
         number_of_fur_yes = len(data[data['furnished'] == 'Yes'])
         number_of_fur_no = len(data[data['furnished'] == 'No'])
-        # print('*************')
-        # print(district)
-        # print(start_date_value)
-        # print(end_date_value)
-        # print(f'Average price: {average_price}')
+
+        miscellaneous_costs = data['miscellaneous_cost'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_miscellaneous_cost = miscellaneous_costs.mean(axis=0)
+
+
+                    
+
+
+        utilities_costs = data['utilities_cost'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_utilities_cost = utilities_costs.mean(axis=0)
+
+
+        rents = data['rent'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_rent = rents.mean(axis=0)
+
+
+        base_rent = data['base_rent'].str.replace('€', '').apply(pandas.to_numeric, args=('coerce',))
+
+        average_base_rent = base_rent.mean(axis=0)  
+
         if(not average_price):
             average_price = 'n.a'
-        # print(f'Average size: {average_size}')
+
         if(not average_size):
             average_size = 'n.a'
-
-        # print(f'Average price/qm: {average_price_per_qm}')
-        # print(f'No of fur:Yes: {number_of_fur_yes}')
-        # print(f'No of fun: No: {number_of_fur_no}')
+        
         postal_code = post
         with open('pre_calculation(postal_code).csv', mode='a', encoding='utf-8', newline='') as csv_file:
             csv_writer = csv.writer(
@@ -190,12 +245,20 @@ for city in all_city_name:
             csv_writer.writerow(
                 [timestamp, 'offers', city, postal_code, 'KPI 1', 'Average price', average_price])
             csv_writer.writerow(
-                [timestamp, 'offers', city, postal_code, 'KPI 2', 'Average size', average_size])
+                [timestamp, 'offers', city, postal_code, 'KPI 2', 'Average Miscellaneous Cost', average_miscellaneous_cost])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, postal_code, 'KPI 3', 'Average Utilities Cost', average_utilities_cost])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, postal_code, 'KPI 4', 'Average Rent', average_rent])
+            # csv_writer.writerow(
+            #     [timestamp, 'offers', city, postal_code, 'KPI 5', 'Average Base Rent', average_base_rent])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, postal_code, 'KPI 5', 'Average size', average_size])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, postal_code, 'KPI 6', 'Average €/qm', average_price_per_qm])
+            csv_writer.writerow(
+                [timestamp, 'offers', city, postal_code, 'KPI 7', 'Count furnished', number_of_fur_yes])
             csv_writer.writerow([timestamp, 'offers', city, postal_code,
-                                 'KPI 3', 'Average €/qm', average_price_per_qm])
-            csv_writer.writerow([timestamp, 'offers', city, postal_code,
-                                 'KPI 4', 'Count furnished', number_of_fur_yes])
-            csv_writer.writerow([timestamp, 'offers', city, postal_code,
-                                 'KPI 5', 'Count unfurnished', number_of_fur_no])
+                                 'KPI 8', 'Count unfurnished', number_of_fur_no])
 
     print('******')

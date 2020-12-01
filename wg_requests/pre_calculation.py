@@ -68,7 +68,7 @@ for city in all_city_name:
   print(f'Number of total district existing in Offers.csv : {len(all_district_name)}')
 
 
-    
+  
 
   if(cleansing_data == True and len(valid_district_list) > 0):
     all_district_name = set(intersection(valid_district_list, all_district_name))

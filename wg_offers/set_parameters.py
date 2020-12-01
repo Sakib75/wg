@@ -1,8 +1,8 @@
 # Set Filter For Start Date
-start_date_value = '1.11.2020'
+start_date_value = '1.10.2020'
 
 #Set Filter For End Date
-end_date_value = '30.11.2020'
+end_date_value = '30.12.2020'
 
 #Choose To Use ScraperAPI
 use_scraper_api = False
