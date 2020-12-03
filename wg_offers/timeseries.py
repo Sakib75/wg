@@ -9,7 +9,7 @@ pandas.options.mode.chained_assignment = None  # default='warn'
 from pylab import MaxNLocator
 # Specify KPI Type
 cleansing_data = True
-foreground_opacity = 0.8
+foreground_opacity = 1.0
 
 KPI_names = ['Average Price','Average Size','Average €/qm','Count furnished','Count unfurnished']
 

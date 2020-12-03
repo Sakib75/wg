@@ -1,9 +1,0 @@
-Timestamp,Filetype,City,Postal_Code,KPIType,KPI Name,Result
-1.12.2020 5:2,offers,Essen,45130,KPI 1,Average price,360.0
-1.12.2020 5:2,offers,Essen,45130,KPI 2,Average Miscellaneous Cost,nan
-1.12.2020 5:2,offers,Essen,45130,KPI 3,Average Utilities Cost,60.0
-1.12.2020 5:2,offers,Essen,45130,KPI 4,Average Rent,300.0
-1.12.2020 5:2,offers,Essen,45130,KPI 5,Average size,15.0
-1.12.2020 5:2,offers,Essen,45130,KPI 6,Average €/qm,24.107142857142858
-1.12.2020 5:2,offers,Essen,45130,KPI 7,Count furnished,2
-1.12.2020 5:2,offers,Essen,45130,KPI 8,Count unfurnished,0
