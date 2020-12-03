@@ -1,8 +1,8 @@
 # Set Filter For Start Date
-start_date_value = 'n.a'
+start_date_value = 'any'
 
 #Set Filter For End Date
-end_date_value = 'n.a'
+end_date_value = 'any'
 
 #Choose To Use ScraperAPI
 use_scraper_api = False
