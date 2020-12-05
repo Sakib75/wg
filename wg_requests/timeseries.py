@@ -9,7 +9,7 @@ pandas.options.mode.chained_assignment = None
 
 # Specify KPI Type
 cleansing_data = True
-foreground_opacity = 0.7
+foreground_opacity = 1.0
 KPI_names = ['Average price','Average size','Average €/qm','Count furnished','Count unfurnished']
 def get_month(time):
 
@@ -103,21 +103,21 @@ def Graph_for_ind(d,type):
             width = 15
         fig, axs = pyplot.subplots(figsize=(width, 5))
         dataFrame = pandas.DataFrame(data={k:data}, index=index)
-        color = 'tab:red'
-        axs.set_xlabel('Month', fontsize='large', fontweight='bold')
-        axs.set_ylabel('Count',color=color, fontsize='large', fontweight='bold')
-        ya = axs.get_yaxis()
-        ya.set_major_locator(MaxNLocator(integer=True))
-        axs.plot(list(count_map.keys()), list(count_map.values()),color=color)
-        axs.set_ylim(ymin=0)                        
-        axs.format_xdata = mdates.DateFormatter('%b %Y')
-        fig.autofmt_xdate() 
         color = 'tab:blue'
+        dataFrame.plot.bar(ax=axs,rot=15, title=f"Timeseries analysis for {city}: {d} ({k})",alpha=foreground_opacity)
+        axs.tick_params(axis='y', colors=color)
+        axs.set_ylabel('Measure\'s value',color=color, fontsize='large', fontweight='bold')
+        axs.grid(axis='y')
         ax2 = axs.twinx()
-        dataFrame.plot.bar(ax=ax2,rot=15, title=f"Timeseries analysis for {city}: {d} ({k})",alpha=foreground_opacity)
-        ax2.tick_params(axis='y', colors=color)
-        ax2.set_ylabel('Measure\'s value',color=color, fontsize='large', fontweight='bold')
-        ax2.grid(True)
+        color = 'tab:red'
+        ax2.set_xlabel('Month', fontsize='large', fontweight='bold')
+        ax2.set_ylabel('Count',color=color, fontsize='large', fontweight='bold')
+        ya = ax2.get_yaxis()
+        ya.set_major_locator(MaxNLocator(integer=True))
+        ax2.plot(list(count_map.keys()), list(count_map.values()),color=color)
+        ax2.set_ylim(ymin=0)                        
+        ax2.format_xdata = mdates.DateFormatter('%b %Y')
+        fig.autofmt_xdate() 
         fig.tight_layout()
         pdf.savefig()
         pyplot.close()
