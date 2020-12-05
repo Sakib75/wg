@@ -9,7 +9,7 @@ pandas.options.mode.chained_assignment = None
 
 # Specify KPI Type
 cleansing_data = True
-foreground_opacity = 0.8
+foreground_opacity = 0.7
 KPI_names = ['Average price','Average size','Average €/qm','Count furnished','Count unfurnished']
 def get_month(time):
 
@@ -132,16 +132,19 @@ with PdfPages('Report_for_Requests(district_based).pdf') as pdf:
     for city in cities:
         city_data = series.loc[series['city'] == city]
         districts = get_districts(city_data.district.unique())
+        print(f'\nPlotting graph for city: {city}')
+        Graph_for_ind(city,'city')
         valid_district_data_per_city = valid_district_data.loc[valid_district_data['Stadt'] == city]
         valid_district_list = list(map(str, valid_district_data_per_city['Stadtteil'].tolist()))
         all_district_name = get_districts(city_data.district.unique())
+        
         print(f'Number of total district existing in Offers.csv : {len(all_district_name)}')
         if(cleansing_data == True and len(valid_district_list) > 0):
             districts = set(intersection(valid_district_list, all_district_name))
         
         print(f'Number of total district existing in Offers.csv (After cleansing) : {len(districts)}')
-        print(f'\nPlotting graph for city: {city}')
-        Graph_for_ind(city,'city')
+        
+        
         cd = 1
         for district in districts:
             print(f'City {cc} out of {len(cities)}  | District {cd} out of {len(districts)}')       

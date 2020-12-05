@@ -9,7 +9,7 @@ pandas.options.mode.chained_assignment = None  # default='warn'
 from pylab import MaxNLocator
 # Specify KPI Type
 cleansing_data = True
-foreground_opacity = 1.0
+foreground_opacity = 0.8
 
 KPI_names = ['Average Price','Average Size','Average €/qm','Count furnished','Count unfurnished']
 
@@ -161,30 +161,27 @@ with PdfPages('Report_for_Offers(postal_code_based).pdf') as pdf:
     for city in cities:
         Graph_for_ind(city,'city')       
         city_data = series.loc[series['city'] == city]
+        
         postals = list(map(str,city_data.postal_code.unique().tolist()))
-
+        print(f'Plotting graph for city {city}')
+        Graph_for_ind(city,'city')
+        print(f'Number of total postals existing in Offers.csv : {len(postals)}')
         valid_postal_data_per_city = valid_postal_data.loc[valid_postal_data['Stadt'] == city]
         valid_postal_list = list(map(str, valid_postal_data_per_city['PLZ'].tolist()))    
         
-        print(f'Number of total postals existing in Offers.csv : {len(postals)}')
+        
 
         if(cleansing_data == True and len(valid_postal_list) > 0):
             postals = set(intersection(valid_postal_list, postals))
         
         print(f'Number of total postals existing in Offers.csv (After cleansing) : {len(postals)}')
 
-        print(f'Plotting graph for city {city}')
-        Graph_for_ind(city,'city')
+        
 
         cd = 1
         for postal in postals:
-            print(postal)
             print(f'City {cc} out of {len(cities)} | Postal Code {cd} out of {len(postals)}')
-            
-
             Graph_for_ind(postal,'postal_code')
-
-
             cd = cd + 1
         cc = cc + 1
     
@@ -203,6 +200,8 @@ with PdfPages('Report_for_Offers(district_based).pdf') as pdf:
         city_data = series.loc[series['city'] == city]
         districts = city_data.district.unique()
         
+        print(f'Plotting graph for city {city}')
+        Graph_for_ind(city,'city')
 
         valid_district_data_per_city = valid_district_data.loc[valid_district_data['Stadt'] == city]
         valid_district_list = list(map(str, valid_district_data_per_city['Stadtteil'].tolist()))    
@@ -214,8 +213,7 @@ with PdfPages('Report_for_Offers(district_based).pdf') as pdf:
         
         print(f'Number of total district existing in Offers.csv (After cleansing) : {len(districts)}')
 
-        print(f'Plotting graph for city {city}')
-        Graph_for_ind(city,'city')
+        
         cd = 1
         for district in districts:
 
