@@ -119,14 +119,22 @@ def Graph_for_ind(pd,type):
                     final_data[k] = Include_Empty_months(final_data[k])
                     data = list(final_data[k].values())
                     index = list(final_data[k].keys())
-                    width = len(index) * 0.3
-                    if(width < 15):
-                        width = 15
+                    width = len(index) * 0.15
+                    if(width < 7):
+                        width = 7
                     fig, axs = pyplot.subplots(figsize=(width, 5))
                     dataFrame = pandas.DataFrame(data={k:data}, index=index)
                     color = 'tab:blue'
-                    dataFrame.plot.bar(ax=axs,rot=15, title=f"Timeseries analysis for {city}: {pd} ({k})",alpha=foreground_opacity)
+                    dataFrame.plot.bar(ax=axs, width=0.9, title=f"Timeseries analysis for {city}: {pd} ({k})",alpha=foreground_opacity)
                     axs.tick_params(axis='y', colors=color)
+                    every_nth = 4
+                    if(len(axs.xaxis.get_ticklabels()) > 15):
+                        
+                        for n, label in enumerate(axs.xaxis.get_ticklabels()):
+                            if n % every_nth != 0:
+                                label.set_visible(False)
+                    yb = axs.get_yaxis()
+                    yb.set_major_locator(MaxNLocator(integer=True))
                     axs.set_ylabel('Measure\'s value',color=color, fontsize='large', fontweight='bold')
                     axs.grid(axis='y')
                     ax2 = axs.twinx()

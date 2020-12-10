@@ -1,0 +1,20 @@
+start_date,end_date,city_id,city_name,type,amount
+1.11.2020,30.11.2020,15,Brandenburg an der Havel,offers, 0
+1.11.2020,30.11.2020,12,Bochum,offers, 14
+1.11.2020,30.11.2020,16,Braunschweig,offers, 18
+1.11.2020,30.11.2020,17,Bremen,offers, 15
+1.11.2020,30.11.2020,18,Bremerhaven,offers, 0
+1.11.2020,30.11.2020,14,Bottrop,offers, 2
+1.11.2020,30.11.2020,23,Darmstadt,offers, 24
+1.11.2020,30.11.2020,22,Cottbus,offers, 1
+1.11.2020,30.11.2020,26,Dortmund,offers, 19
+1.11.2020,30.11.2020,11,Bocholt,offers, 0
+1.11.2020,30.11.2020,25,Detmold,offers, 2
+1.11.2020,30.11.2020,13,Bonn,offers, 20
+1.11.2020,30.11.2020,28,Duisburg,offers, 3
+1.11.2020,30.11.2020,24,Dessau-Roßlau,offers, 0
+1.11.2020,30.11.2020,20,Clausthal-Zellerfeld,offers, 1
+1.11.2020,30.11.2020,21,Coburg,offers, 14
+1.11.2020,30.11.2020,27,Dresden,offers, 22
+1.11.2020,30.11.2020,19,Chemnitz,offers, 8
+1.11.2020,30.11.2020,29,Düren,offers, 0
