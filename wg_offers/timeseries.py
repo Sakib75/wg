@@ -119,7 +119,7 @@ def Analyze_data(k_data):
                     return {'Average Miscellaneous Cost':average_miscellaneous_cost,'Rent':average_rent,'Average Utilities Cost':average_utilities_cost,'Average Base Rent':average_base_rent,'Average Price': average_price,'Average Size':average_size,'Average €/qm':average_price_per_qm,'Count Furnished':number_of_fur_yes,'Count Unfurnished':number_of_fur_no}
 
 def Graph_for_ind(pd,type,ys):
-                print(ys)
+
                 series['postal_code'] = series['postal_code'].apply(str)
                 pd_data = series.loc[series[type]==pd]         
                 pd_data['online_for'] = pd_data['online_for'].apply(get_timing_year) if ys else pd_data['online_for'].apply(get_timing_month) 
